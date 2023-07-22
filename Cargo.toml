@@ -1,0 +1,36 @@
+[package]
+name = "dbs-final"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-http = "3.3.1"
+actix-web = "4.3.1"
+chrono = "0.4.26"
+diesel = { version="2.1.0", features=["postgres", "r2d2", "uuid", "chrono", "postgres_backend", "extras"] }
+diesel_migrations = {version="2.1.0", default-features=false, features=["postgres"]}
+dotenv = "0.15.0"
+futures-util = "0.3.28"
+regex = "1.9.1"
+serde = "1.0.174"
+serde_json = "1.0.103"
+serde_valid = "0.16.2"
+uuid = { version = "1.4.1", features = ["serde"] }
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# [dependencies]
+# actix-http = "3.3.1"
+# actix-web = "4.3"
+# chrono = { version = "0.4", features = ["serde"] }
+# diesel = { version = "2.1.0", features = ["postgres", "r2d2", "uuid", "chrono", "postgres_backend"] }
+# diesel-derive-enum = { version = "2.0.1", default-features = false, features = ["postgres"] }
+# diesel-derive-newtype = "2.0.0"
+# diesel_migrations = { version = "2.0.0", default-features = false, features = ["postgres"] }
+# dotenv = "0.15.0"
+# futures-util = "0.3.28"
+# regex = "1.8.1"
+# serde = { version = "1.0", default-features = false, features = ["derive"] }
+# serde_json = "1.0"
+# serde_valid = "0.16.1"
+# uuid = { version = "1.4.1", features = ["serde"] }
